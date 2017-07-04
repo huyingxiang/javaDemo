@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springDemo.dao.UserDao">
+
+    <!--查询某几栏-->
+    <sql id="name-pwd">
+        userName,password
+    </sql>
+
+    <!--查询某些字段-->
+    <select id="query" parameterType="int" resultType="hashmap">
+        SELECT <include refid="name-pwd"></include> from user where userId = #{userId}
+    </select>
+
+    <!--增加-->
+    <insert id="addUser" parameterType="com.springDemo.model.User">
+        INSERT INTO user(userName,password) VALUES (#{userName},#{password})
+    </insert>
+
+    <!--update-->
+    <update id="updateUser" parameterType="com.springDemo.model.User">
+        UPDATE user SET userName = #{userName} ,password = #{password} WHERE userId = #{userId}
+    </update>
+
+    <!--delete-->
+    <delete id="delUser" parameterType="int">
+        DELETE FROM user WHERE userId = #{userId}
+    </delete>
+
+    <!--查-->
+    <select id="queryUser" parameterType="com.springDemo.model.User" resultType="hashmap">
+        select * from user where userName = #{userName} and password = #{password}
+    </select>
+</mapper>

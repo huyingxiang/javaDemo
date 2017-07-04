@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.koudai:itemcenter-client:1.2.36-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/koudai/itemcenter-client/1.2.36-SNAPSHOT/itemcenter-client-1.2.36-20170323.101435-3.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/koudai/itemcenter-client/1.2.36-SNAPSHOT/itemcenter-client-1.2.36-20170323.101435-3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/koudai/itemcenter-client/1.2.36-SNAPSHOT/itemcenter-client-1.2.36-20170323.101435-3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

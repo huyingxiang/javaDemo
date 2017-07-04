@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xmlns="http://java.sun.com/xml/ns/javaee"
+		 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+		 version="2.5">
+
+	<display-name>Spring MVC Application</display-name>
+
+	<!--指定配置文件-->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+			classpath:ApplicationContext.xml
+		</param-value>
+	</context-param>
+
+	<!--申明web容器监听器-->
+	<listener>  <!--在启动的时候加载配置文件applicationContext-->
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<servlet>
+		<servlet-name>dispatcherServlet</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath:mvc-dispatcher-servlet.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+
+
+	<servlet-mapping>
+		<servlet-name>dispatcherServlet</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+	<!--<servlet-mapping>-->
+		<!--<servlet-name>default</servlet-name>-->
+		<!--<url-pattern>*.css</url-pattern>-->
+	<!--</servlet-mapping>-->
+
+
+
+
+
+	<!--<servlet-mapping>-->
+		<!--<servlet-name>mvc-dispatcher</servlet-name>-->
+		<!--<url-pattern>/index</url-pattern>-->
+	<!--</servlet-mapping>-->
+	<!--<welcome-file-list>-->
+		<!--<welcome-file>index</welcome-file>-->
+	<!--</welcome-file-list>-->
+</web-app>

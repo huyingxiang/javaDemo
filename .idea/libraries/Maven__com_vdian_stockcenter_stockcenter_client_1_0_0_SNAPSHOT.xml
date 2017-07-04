@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.vdian.stockcenter:stockcenter-client:1.0.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/vdian/stockcenter/stockcenter-client/1.0.0-SNAPSHOT/stockcenter-client-1.0.0-20170210.032217-14.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/vdian/stockcenter/stockcenter-client/1.0.0-SNAPSHOT/stockcenter-client-1.0.0-20170210.032217-14-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/vdian/stockcenter/stockcenter-client/1.0.0-SNAPSHOT/stockcenter-client-1.0.0-20170210.032217-14-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+       <environments default = "development">
+              <environment id = "development">
+                     <trans
+              </environment>
+       </environments>
+
+</configuration>
